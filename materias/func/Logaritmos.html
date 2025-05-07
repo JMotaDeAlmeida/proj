@@ -11,35 +11,64 @@
       <link href="../../css/styles.css" rel="stylesheet">
    </head>
    <body>
-      <!-- Header -->
-      <header class="bg-light border-bottom fixed-top">
-         <div class="container-fluid d-flex align-items-center justify-content-between py-2">
-            <div class="d-flex align-items-center">
-               <!-- Logo -->
-               <a class="navbar-brand" href="../../index.html" style="font-size: 24px; font-weight: bold;">
-               <img src="..\..\images\logo3.png" alt="Logo EducaMat" style="height: 50px;">
-               </a>
-               <!-- Dropdown Matérias -->
-               <div class="dropdown ms-3">
-                  <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMaterias" data-bs-toggle="dropdown" aria-expanded="false">
-                  Matérias
-                  </button>
-                  <ul class="dropdown-menu" aria-labelledby="dropdownMaterias">
-                     <li><a class="dropdown-item" href="../operacoes.html">Operações</a></li>
-                     <li><a class="dropdown-item" href="../notacao.html">Notação Científica</a></li>
-                     <li><a class="dropdown-item" href="../algebra.html">Técnicas Algébricas</a></li>
-                     <li><a class="dropdown-item" href="../equacoes.html">Equações e Inequações</a></li>
-                     <li><a class="dropdown-item" href="../estatistica.html">Estatística</a></li>
-                     <li><a class="dropdown-item" href="../razao.html">Razão e Proporção</a></li>
-                     <li><a class="dropdown-item" href="../porcentagem.html">Porcentagem</a></li>
-                     <li><a class="dropdown-item" href="../geometria.html">Geometria</a></li>
-                     <li><a class="dropdown-item" href="../funcoesmain.html">Funções</a></li>
-                     <li><a class="dropdown-item" href="../sequencias.html">Sequências</a></li>
-                     <li><a class="dropdown-item" href="../multimidia.html">Multimidia</a></li>
-                  </ul>
+            <!-- Header -->
+            <header class="bg-light border-bottom">
+               <div class="container-fluid d-flex align-items-center justify-content-between py-2">
+                  <div class="d-flex align-items-center">
+                     <!-- Logo -->
+                     <a class="navbar-brand" href="../../inicio.html" style="font-size: 24px; font-weight: bold;">
+                     <img src="../../images/logo3.png" alt="Logo EducaMat" style="height: 50px;">
+                     </a>
+      
+                     <!-- Menu de Navegação -->
+                     <nav class="d-flex ms-4">
+                        <a class="nav-link px-3" href="../../inicio.html">Início</a>
+                        <a class="nav-link px-3" href="../../sobre.html">Sobre</a>
+                     <!-- Dropdown Matérias como link -->
+                     <div class="dropdown">
+                        <a class="nav-link dropdown-toggle px-3" href="#" id="dropdownMaterias" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Conteúdos
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMaterias">
+                          <li><a class="dropdown-item" href="../operacoes.html">Operações</a></li>
+                          <li><a class="dropdown-item" href="../notacao.html">Notação Científica</a></li>
+                          <li><a class="dropdown-item" href="../algebra.html">Técnicas Algébricas</a></li>
+                          <li class="dropdown-submenu dropdown-hover">
+                            <a class="dropdown-item dropdown-toggle" href="#">Funções</a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="../func/ConceitosFundamentais.html">Conceitos Fundamentais</a></li>
+                              <li><a class="dropdown-item" href="../func/Equacoesexponenciais.html">Equações Exponenciais</a></li>
+                              <li><a class="dropdown-item" href="../func/Funcao1grau.html">Função do 1º Grau</a></li>
+                              <li><a class="dropdown-item" href="../func/Funcao2grau.html">Função do 2º Grau</a></li>
+                              <li><a class="dropdown-item" href="../func/Funcaoexponencial.html">Função Exponencial</a></li>
+                              <li><a class="dropdown-item" href="../func/Logaritmos.html">Função Logarítmica</a></li>
+                            </ul>
+                          </li>
+                          <li class="dropdown-submenu dropdown-hover">
+                            <a class="dropdown-item dropdown-toggle" href="#">Geometria</a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="../geo/areapoligonos.html">Área de Polígonos</a></li>
+                              <li><a class="dropdown-item" href="../geo/arearazao.html">Área e razão entre figuras planas</a></li>
+                              <li><a class="dropdown-item" href="../geo/circunferencia.html">Circunferência e círculo</a></li>
+                              <li><a class="dropdown-item" href="../geo/poligonosregulares.html">Polígonos regulares</a></li>
+                              <li><a class="dropdown-item" href="../geo/relacoes.html">Relações trigonométricas em polígonos</a></li>
+                              <li><a class="dropdown-item" href="../geo/retasparalelas.html">Retas paralelas cortadas por uma transversal</a></li>
+                              <li><a class="dropdown-item" href="../geo/semelhanca.html">Semelhança de triângulos</a></li>
+                              <li><a class="dropdown-item" href="../geo/simetria.html">Simetrias e congruências</a></li>
+                              <li><a class="dropdown-item" href="../geo/teorematales.html">Teorema de Tales</a></li>
+                            </ul>
+                          </li>
+                          <li><a class="dropdown-item" href="../estatistica.html">Estatística</a></li>
+                          <li><a class="dropdown-item" href="../razao.html">Razão e Proporção</a></li>
+                          <li><a class="dropdown-item" href="../porcentagem.html">Porcentagem</a></li>
+                          <li><a class="dropdown-item" href="../sequencias.html">Sequências</a></li>
+                        </ul>
+                      </div>
+      
+                     <a class="nav-link px-3" href="../multimidia.html">Multimídia</a>
+                     <a class="nav-link px-3" href="../../contato.html">Contato</a>
+                  </div>
                </div>
-            </div>
-         </div>
       </header>
       <!-- Conteúdo da página -->
       <div class="content">
@@ -120,6 +149,16 @@
          </div>
       </div>
    </div>
+</div>
+</div>
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-   </body>
+   <footer class="bg-light text-center text-muted py-4 border-top mt-5">
+      <div class="container">
+        <p class="mb-0 px-3" style="font-size: 14px;">
+          Este repositório foi criado a partir da curadoria de materiais disponíveis gratuitamente na internet, sendo que os direitos autorais pertencem a cada um dos materiais encontrados. <br>
+          Caso algum autor identifique seu material aqui e deseje a remoção ou correção de crédito, entre em contato conosco pelo e-mail: <a href="mailto: gabriel.oliveira@mackenzie.br" class="text-decoration-underline text-muted">gabriel.oliveira@mackenzie.br</a>.
+        </p>
+      </div>
+    </footer>
+</body>
 </html>
