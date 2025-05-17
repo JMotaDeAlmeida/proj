@@ -12,64 +12,81 @@
    </head>
    <body>
       <!-- Header -->
-      <header class="bg-light border-bottom">
-         <div class="container-fluid d-flex align-items-center justify-content-between py-2">
-            <div class="d-flex align-items-center">
-               <!-- Logo -->
-               <a class="navbar-brand" href="inicio.html" style="font-size: 24px; font-weight: bold;">
-               <img src="images/logo3.png" alt="Logo EducaMat" style="height: 50px;">
-               </a>
+          <!-- Header -->
+<header class="bg-light border-bottom">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid d-flex align-items-center">
+      <!-- Logo -->
+      <a class="navbar-brand me-3" href="inicio.html" style="font-size: 24px; font-weight: bold;">
+        <img src="images/logo3.png" alt="Logo EducaMat" style="height: 50px;">
+      </a>
 
-               <!-- Menu de Navegação -->
-               <nav class="d-flex ms-4">
-                  <a class="nav-link px-3" href="index.html">Início</a>
-                  <a class="nav-link px-3" href="sobre.html">Sobre</a>
-               <!-- Dropdown Matérias como link -->
-               <div class="dropdown">
-                  <a class="nav-link dropdown-toggle px-3" href="#" id="dropdownMaterias" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Conteúdos
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="dropdownMaterias">
-                    <li><a class="dropdown-item" href="materias/operacoes.html">Operações</a></li>
-                    <li><a class="dropdown-item" href="materias/notacao.html">Notação Científica</a></li>
-                    <li><a class="dropdown-item" href="materias/algebra.html">Técnicas Algébricas</a></li>
-                    <li class="dropdown-submenu dropdown-hover">
-                      <a class="dropdown-item dropdown-toggle" href="#">Funções</a>
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="materias/func/ConceitosFundamentais.html">Conceitos Fundamentais</a></li>
-                        <li><a class="dropdown-item" href="materias/func/Equacoesexponenciais.html">Equações Exponenciais</a></li>
-                        <li><a class="dropdown-item" href="materias/func/Funcao1grau.html">Função do 1º Grau</a></li>
-                        <li><a class="dropdown-item" href="materias/func/Funcao2grau.html">Função do 2º Grau</a></li>
-                        <li><a class="dropdown-item" href="materias/func/Funcaoexponencial.html">Função Exponencial</a></li>
-                        <li><a class="dropdown-item" href="materias/func/Logaritmos.html">Função Logarítmica</a></li>
-                      </ul>
-                    </li>
-                    <li class="dropdown-submenu dropdown-hover">
-                      <a class="dropdown-item dropdown-toggle" href="#">Geometria</a>
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="materias/geo/areapoligonos.html">Área de Polígonos</a></li>
-                        <li><a class="dropdown-item" href="materias/geo/arearazao.html">Área e razão entre figuras planas</a></li>
-                        <li><a class="dropdown-item" href="materias/geo/circunferencia.html">Circunferência e círculo</a></li>
-                        <li><a class="dropdown-item" href="materias/geo/poligonosregulares.html">Polígonos regulares</a></li>
-                        <li><a class="dropdown-item" href="materias/geo/relacoes.html">Relações trigonométricas em polígonos</a></li>
-                        <li><a class="dropdown-item" href="materias/geo/retasparalelas.html">Retas paralelas cortadas por uma transversal</a></li>
-                        <li><a class="dropdown-item" href="materias/geo/semelhanca.html">Semelhança de triângulos</a></li>
-                        <li><a class="dropdown-item" href="materias/geo/simetria.html">Simetrias e congruências</a></li>
-                        <li><a class="dropdown-item" href="materias/geo/teorematales.html">Teorema de Tales</a></li>
-                      </ul>
-                    </li>
-                    <li><a class="dropdown-item" href="materias/estatistica.html">Estatística</a></li>
-                    <li><a class="dropdown-item" href="materias/razao.html">Razão e Proporção</a></li>
-                    <li><a class="dropdown-item" href="materias/porcentagem.html">Porcentagem</a></li>
-                    <li><a class="dropdown-item" href="materias/sequencias.html">Sequências</a></li>
-                  </ul>
-                </div>
+      <!-- Botão hamburguer -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-               <a class="nav-link px-3" href="materias/multimidia.html">Multimídia</a>
-               <a class="nav-link px-3" href="contato.html">Contato</a>
-            </div>
-         </div>
-      </header>
+      <!-- Menu -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav d-flex align-items-center flex-wrap">
+          <li class="nav-item"><a class="nav-link px-3" href="index.html">Início</a></li>
+          <li class="nav-item"><a class="nav-link px-3" href="sobre.html">Sobre</a></li>
+
+          <!-- Dropdown Conteúdos -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle px-3" href="#" id="dropdownMaterias" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Conteúdos
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMaterias">
+              <li><a class="dropdown-item" href="materias/operacoes.html">Operações</a></li>
+              <li><a class="dropdown-item" href="materias/notacao.html">Notação Científica</a></li>
+              <li><a class="dropdown-item" href="materias/algebra.html">Técnicas Algébricas</a></li>
+              <li><a class="dropdown-item" href="materias/equacoes.html">Equações e Inequações</a></li>
+
+              <!-- Submenu Funções -->
+              <li class="dropdown-submenu position-relative">
+                <a class="dropdown-item dropdown-toggle" href="#">Funções</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="materias/func/ConceitosFundamentais.html">Conceitos Fundamentais</a></li>
+                  <li><a class="dropdown-item" href="materias/func/Equacoesexponenciais.html">Equações Exponenciais</a></li>
+                  <li><a class="dropdown-item" href="materias/func/Funcao1grau.html">Função do 1º Grau</a></li>
+                  <li><a class="dropdown-item" href="materias/func/Funcao2grau.html">Função do 2º Grau</a></li>
+                  <li><a class="dropdown-item" href="materias/func/Funcaoexponencial.html">Função Exponencial</a></li>
+                  <li><a class="dropdown-item" href="materias/func/Logaritmos.html">Função Logarítmica</a></li>
+                </ul>
+              </li>
+
+              <!-- Submenu Geometria -->
+              <li class="dropdown-submenu position-relative">
+                <a class="dropdown-item dropdown-toggle" href="#">Geometria</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="materias/geo/areapoligonos.html">Área de Polígonos</a></li>
+                    <li><a class="dropdown-item" href="materias/geo/arearazao.html">Área e razão entre figuras planas</a></li>
+                    <li><a class="dropdown-item" href="materias/geo/circunferencia.html">Circunferência e círculo</a></li>
+                    <li><a class="dropdown-item" href="materias/geo/poligonosregulares.html">Polígonos regulares</a></li>
+                    <li><a class="dropdown-item" href="materias/geo/relacoes.html">Relações trigonométricas em polígonos</a></li>
+                    <li><a class="dropdown-item" href="materias/geo/retangulos.html">Triângulos retângulos</a></li>
+                    <li><a class="dropdown-item" href="materias/geo/retasparalelas.html">Retas paralelas cortadas por uma transversal</a></li>
+                    <li><a class="dropdown-item" href="materias/geo/semelhanca.html">Semelhança de triângulos</a></li>
+                    <li><a class="dropdown-item" href="materias/geo/simetria.html">Simetrias e congruências</a></li>
+                    <li><a class="dropdown-item" href="materias/geo/teorematales.html">Teorema de Tales</a></li>
+                </ul>
+              </li>
+
+              <li><a class="dropdown-item" href="materias/estatistica.html">Estatística</a></li>
+              <li><a class="dropdown-item" href="materias/porcentagem.html">Porcentagem</a></li>
+              <li><a class="dropdown-item" href="materias/sequencias.html">Sequências</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item"><a class="nav-link px-3" href="materias/multimidia.html">Multimídia</a></li>
+          <li class="nav-item"><a class="nav-link px-3" href="contato.html">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
       <!-- Hero Section -->
       <div class="px-4 py-5 text-center">
          <h1 class="display-5 fw-bold">Repositório de Materiais</h1>
