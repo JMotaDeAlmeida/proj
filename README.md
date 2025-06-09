@@ -1,4 +1,3 @@
-#EducaMat
 
 
  O EducaMat é um projeto criado para apoiar professores de Matemática do 1º ano do Ensino Médio, oferecendo um repositório digital com conteúdos organizados, acessíveis e alinhados à Base Nacional Comum Curricular (BNCC).
